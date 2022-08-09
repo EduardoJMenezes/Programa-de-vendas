@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>Hamburgeria Ouro Preto</h1></li>
+            <li><h2>Vendas de Hambúrguer</h2></li>
+        </ul>
+    </header>
+
+    <section>
+        <h3>Selecione o Hambúrguer que foi vendido</h3>
+        <form>
+            <ul>
+                <li><input type="radio" id="CheeseBurguer" name="Hamburguers">
+                <label for="CheeseBurguer">Cheese Burguer</label></li>
+                <li><input type="radio" id="CheeseBacon" name="Hamburguers">
+                <label for="CheeseBacon">Cheese Bacon</label></li>
+                <li><input type="radio" id="CheeseEgg" name="Hamburguers">
+                <label for="CheeseEgg">Cheese Egg</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Hamburguers</th><th>Quantidade</th><th>Valores</th>
+            </tr>
+            <tr>
+                <td>Cheese Burguer</td><td id="resultadoCheeseBurguer"></td><td id="vendaCheeseBurguer"></td>
+            </tr>
+            <tr>
+                <td>Cheese Bacon</td><td id="resultadoCheeseBacon"></td><td id="vendaCheeseBacon"></td>
+            </tr>
+            <tr>
+                <td>Cheese Egg</td><td id="resultadoCheeseEgg"></td><td id="vendaCheeseEgg"></td>
+            </tr>     
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
